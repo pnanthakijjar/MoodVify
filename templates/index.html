@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MoodVify</title>
+	<link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+
+	<style type="text/css">
+body
+{
+	background-image: url(https://ununsplash.imgix.net/photo-1433838552652-f9a46b332c40?dpr=1.80&fit=crop&fm=jpg&h=700&q=75&w=1050);
+}
+
+h1
+{
+	font-size: 75px;
+	margin-top: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 2px 0 15px #292929;
+	letter-spacing: 4px;
+	text-decoration: none;
+	color: #D8D8D8;
+}
+
+h3
+{
+	font-size:30px;
+	font-family:Sintony, sans-serif;
+	text-shadow:1px 0 4px #292929;
+	letter-spacing: 1px;
+	color: #C6DAE4;
+}
+
+h2
+{
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #D7D7D7;
+}
+
+#banner
+{
+	width: 500px;
+	height: 200px;
+	text-align: center;
+	background-repeat:no-repeat;
+	border-radius: 5px;
+	margin:10px auto auto;
+	padding:80px 0
+}
+
+.lead
+{
+	border-radius: 3px;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 3px;
+	font-family:Sintony, sans-serif;
+}
+	</style>
+
+</head>
+<body>
+	<div id="banner">
+		<h1>Time to MoodVify</h1>
+		<p class="lead"> Never waste time searching for movies to watch ever again! Spend more time enjoying than searching for what to watch! Quick n Easy</p>
+	</div>
+	<div id="emailform">
+
+	</div>
+	<h2> Hello {{ name }}! </h2>
+
+	<center><h3>What's your current mood?</h3></center>
+
+	<form action="/mood" method="post">
+		<center>
+		<input type="checkbox" name="0" value="comedy"> <img src="https://cdn.shopify.com/s/files/1/0185/5092/products/persons-0023.png?v=1369543518" alt="funny emoji" style="width:30px;height:30px;"></input>
+
+		<input type="checkbox" name="1" value="romantic"><img src="https://cdn.shopify.com/s/files/1/0185/5092/products/persons-0008.png?v=1369543505" alt="romantic emoji" style="width:30px;height:30px;"></input>
+
+		<input type="checkbox" name="2" value="sad"> <img src="https://publish.illinois.edu/macsebertblog/files/2015/05/persons-0022_large.png" alt="romantic emoji" style="width:30px;height:30px;"> </input>
+
+		<input type="checkbox" name="3" value="scared"><img src="http://emojicharades.com/wp-content/uploads/emoji/750.png" alt="funny emoji" style="width:30px;height:30px;"></input>
+
+		<input type="checkbox" name="4" value="family"><img src="http://emojipedia.org/wp-content/uploads/2013/07/160x160x1f468-200d-1f469-200d-1f467-200d-1f467-family-man-woman-girl-girl-apple-new-2015-final.png.pagespeed.ic.tbm7OusF43.png" alt="funny emoji" style="width:30px;height:30px;"></input>
+		<input type="checkbox" name="5" value="food"><img src="https://lh3.googleusercontent.com/-ZUcXtGTd1Vg/VPmqnjXXswI/AAAAAAAAAFc/FNLLDrePo0s/w326-h480/Ice%2BCream.png" alt="food emoji" style="width:30px;height:35px;"></input>
+
+		<input type="checkbox" name="6" value="murder"><img src="http://data.whicdn.com/images/174534202/large.png" alt="murder/criminal emoji" style="width:30px;height:30px;"></input>
+		<input type="checkbox" name="7" value="action"><img src="http://www180.lunapic.com/do-not-link-here-use-hosting-instead/143854755253651?6003263947" alt="funny emoji" style="width:30px;height:30px;"></input>
+		<input type="checkbox" name="8" value="drama"><img src="http://emojipop.net/data/images/emoji_set_623.png" alt="funny emoji" style="width:30px;height:30px;"></input>
+
+		<input type="checkbox" name="9" value="musical"><img src="http://emojicharades.com/wp-content/uploads/emoji/323.png" alt="funny emoji" style="width:30px;height:30px;"></input>
+		
+		<br><br><center><input type="submit" value="MoodVify Me!"></input><br></center>
+		</center></br>
+	</form>	
+
+</body>
+</html>

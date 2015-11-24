@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>You've Been MoodVified</title>
+  <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+
+  <style type="text/css">
+body
+{
+  background-image: url(https://ununsplash.imgix.net/photo-1434394673726-e8232a5903b4?dpr=1.80&fit=crop&fm=jpg&h=700&q=75&w=1050);
+  background-size: 1440px 1080px;
+  background-repeat: no-repeat;
+}
+
+h1
+{
+  font-size: 60px;
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 0 15px #292929;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: #D8D8D8;
+}
+
+h3
+{
+  font-size:30px;
+  font-family:Sintony, sans-serif;
+  text-shadow:1px 0 4px #292929;
+  letter-spacing: 1px;
+  color: #C6DAE4;
+}
+
+h2
+{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #D7D7D7;
+}
+
+#banner
+{
+  width: 1000px;
+  height: 200px;
+  text-align: center;
+  background-repeat:no-repeat;
+  border-radius: 5px;
+  margin:10px auto auto;
+  padding:80px 0
+}
+
+.lead
+{
+  border-radius: 3px;
+  box-shadow:rgba(0,0,0,0.2) 0 1px 3px;
+  font-family:Sintony, sans-serif;
+}
+  </style>
+
+</head>
+<body>
+  <div id="banner">
+    <h1><center>~ You've Been MoodVified ~</h1></center>
+    <p class="lead"> (Movie List Here) ! </p>
+    <ul>
+      {% for movie in moodvified_list %}
+      <li>{{ movie }}</li>
+      {% endfor %}
+    </u1>
+  </div>
+
+
+</body>
+</html>
